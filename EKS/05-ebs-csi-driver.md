@@ -3,7 +3,7 @@
 The Amazon EBS CSI plugin requires IAM permissions to make calls to AWS APIs on your behalf.
 
 Create an IAM role and attach a policy. AWS maintains an AWS managed policy or you can create your own custom policy. You can create an IAM role and attach the AWS managed policy with the following command. Replace my-cluster with the name of your cluster. The command deploys an AWS CloudFormation stack that creates an IAM role and attaches the IAM policy to it. 
-
+ same as oidc-IAM
 ```
 eksctl create iamserviceaccount \
     --name ebs-csi-controller-sa \
